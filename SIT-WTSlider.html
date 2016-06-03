@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/juicyslider.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <!-- 上2行(ローカル確認用)をこれに置き換え
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+    -->
+    <script src="js/juicyslider.js"></script>
+</head>
+<body>
+    <div id="sit-wt" class="juicyslider">
+        <ul>
+            <li><img src="img/slider/sit_wt/sit-wt_s1.jpg"></li>
+            <li><img src="img/slider/sit_wt/sit-wt_s2.jpg"></li>
+            <li><img src="img/slider/sit_wt/sit-wt_s3.jpg"></li>
+            <li><img src="img/slider/sit_wt/sit-wt_s4.jpg"></li>
+        </ul>
+        <div class="nav prev" style="display: block"></div>
+        <div class="nav next"></div>
+    </div>
+    <script>
+        $(function() {
+            $("#sit-wt").juicyslider({
+                mode: "contain",
+                width: null,
+                height: null,
+                bgcolor: '#ffff',
+                autoplay: 4000,
+                shuffle: false,
+                show: {effect: 'fade', duration: 1000},
+                hide: {effect: 'fade', duration: 1000},
+            });
+        });
+    </script>
+</body>
+
+</html>
