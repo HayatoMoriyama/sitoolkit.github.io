@@ -87,8 +87,8 @@
   margin: 0 auto;
 }
 .swiper-slide > img {
-  min-height: 300px;
-  max-height: 600px
+  height: auto;
+  max-height: 600px;
 }
 .swiper-slide .title {
   font-weight: 300;
